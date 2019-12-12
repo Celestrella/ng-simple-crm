@@ -1,0 +1,31 @@
+<br/>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Order total</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let cust of filteredCustomers">
+        <td>
+            <a>
+                <!--TODO-->
+                {{cust.name}}
+            </a>
+        </td>
+        <td>{{cust.city}}</td>
+        <td>{{cust.orderTotal}}</td>
+    </tr>
+    <td colspan="2">&nbsp;</td>
+    <td>{{ customersOrderTotal}}</td>
+
+    
+    <tr>
+        <td>No customers found</td>
+    </tr>
+</table>
+
+Number of customers:
+<br/>
